@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chatbot">
+        <header>
+          <h2>Alien Chat App</h2>
+        </header>
+        <ul class="chatbox">
+          <p class="info">you joined the chat</p>
+        </ul>
+        <div class="chat-input">
+          <textarea
+            placeholder="Message..."
+            spellcheck="false"
+            required
+          ></textarea>
+          <span id="send-btn">send</span>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./socket.io/socket.io.esm.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
